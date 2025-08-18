@@ -8,33 +8,52 @@
     <link rel="icon" type="image/png" href="logo-port.png">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <title>Caue Moraes</title>
+    <style>
+  body{
+    font-family: 'Orbitron', sans-serif !important;
+  }
+  header{
+    font-family: 'Orbitron', sans-serif !important;
+  }
+</style>
     
 </head>
-<header class="d-flex justify-content-between align-items-center p-3">
-  <h5 id="nome-header" class="fw-bold">Caue Moraes</h5>
-  <nav id="header-topicos">
-    <ul class="nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#sobre-mim">Sobre mim/About Me</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#projetos">Projetos/Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#experiencias">Experiências/Experiences</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contato">Contato/Contact</a>
-      </li>
-    </ul>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+    <div class="container-fluid">
+      <h5 id="nome-header" class="fw-bold navbar-brand mb-0">Vitor Veiga</h5>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre-mim">Sobre mim/About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projetos">Projetos/Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experiencias">Experiências/Experiences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">Contato/Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 </header>
 
 <section id="foto-nome" class="p-3">
 
 <div class="text-center">
-  <img src="Captura de tela 2025-08-11 210139.png" class="rounded-circle" alt="Foto de perfil" style="width:120px; height:120px;">
+  <img src="imagens/Captura de tela 2025-08-11 210139.png" id="foto-pessoal" class="rounded-circle" alt="Foto de perfil" style="width:120px; height:120px;">
 
 </div>
 <h3 class="text-center fw-bold text-white mt-2">Caue Moraes</h3>
@@ -114,14 +133,100 @@
   </div>
 </section>
 
-<section class="p-3"   id="projetos">
-    <h3 class="text-center fw-bold mt-4 mb-4">Projetos/Projects</h3>
+<section class="p-3" id="projetos">
+  <h3 class="text-center fw-bold mt-4 mb-4">Projetos/Projects</h3>
+  <div class="container position-relative">
 
+    <!-- Linha vertical apenas em md+ -->
+    <div class="d-none d-md-block position-absolute top-0 start-50 translate-middle-x bg-primary" 
+         style="width:4px; height:100%;"></div>
+
+    <!-- Projeto 1 -->
+    <div class="row align-items-center mb-5 flex-column flex-md-row">
+      <div class="col-md-6 text-md-end text-center pe-md-5 mb-3 mb-md-0">
+        <span class="badge bg-primary mb-2">2025</span>
+        <h5>Plataforma de Eventos</h5>
+        <p>
+          Desenvolvimento completo de uma plataforma de eventos para clientes e administradores.<br>
+          <span class="text-muted">Complete development of an event platform for clients and administrators.</span>
+        </p>
+        <p>
+          <span class="badge bg-secondary">HTML</span>
+          <span class="badge bg-secondary">CSS</span>
+           <span class="badge bg-secondary">JavaScript</span>
+          <span class="badge bg-secondary">SpringBoot</span>
+          <span class="badge bg-secondary">Postgres</span>
+        </p>
+       <a href="https://github.com/vitorveigas/Ti-3" class="text-decoration-none">
+  <i class="fa-brands fa-github text-black"></i> Ver no GitHub / See on GitHub
+</a>
+
+      </div>
+      <div class="col-md-6 ps-md-5 text-center">
+        <img src="imagens/WhatsApp Image 2025-08-18 at 18.42.59.jpeg" class="img-fluid rounded shadow-sm" alt="Imagem Projeto 1" style="width: 700px; height: 400px;">
+      </div>
+    </div>
+
+   
+    <div class="row align-items-center mb-5 flex-column flex-md-row-reverse">
+      <div class="col-md-6 ps-md-5 text-center mb-3 mb-md-0">
+        <span class="badge bg-primary mb-2">2024</span>
+        <h5>E-commerce de esquadrias de vidro e aluminío</h5>
+        <p>
+          Sistema de gerenciamento e venda de esquadrias de vidro e alumínio.<br>
+          <span class="text-muted">E-commerce system developed in C language.</span>
+        </p>
+        <p>
+           <span class="badge bg-secondary">HTML</span>
+          <span class="badge bg-secondary">CSS</span>
+           <span class="badge bg-secondary">JavaScript</span>
+          <span class="badge bg-secondary">SpringBoot</span>
+          <span class="badge bg-secondary">Postgres</span>
+        </p>
+          <a href="https://github.com/vitorveigas/Ti-2" class="text-decoration-none">
+  <i class="fa-brands fa-github text-black"></i> Ver no GitHub / See on GitHub
+</a>
+      </div>
+      <div class="col-md-6 text-md-end text-center pe-md-5">
+        <img src="imagens/Captura de tela 2025-08-18 184300.png" class="img-fluid rounded shadow-sm" alt="Imagem Projeto 2"  style="width: 700px; height: 400px;">
+      </div>
+    </div>
+
+  </div>
 </section>
 
 <section class="p-3 m-5" id="experiencias">
-   <h3 class="text-center fw-bold mt-4 mb-4">Experiências/Experiences</h3>
+ <h3 class="fw-bold mt-4 mb-4 text-center text-break">
+  Experiências/Experiences
+</h3>
 
+  <div class="container">
+
+    <!-- Card de Experiência 1 -->
+    <div class="card shadow-sm border-0 rounded-3 mb-4">
+      <div class="card-body d-flex flex-column flex-md-row justify-content-between align-items-center">
+        
+        <!-- Lado Esquerdo: Detalhes -->
+        <div class="mb-3 mb-md-0 text-center text-md-start">
+          <h5 class="fw-bold">Faculdade de Engenharia de Software</h5>
+          <p class="mb-0 text-muted">
+            Desenvolvimento de soft skills e habilidades técnicas para ingressar no mercado de trabalho como engenheiro de software.
+          </p>
+        </div>
+
+        <!-- Lado Direito: Logo + Info -->
+        <div class="text-center text-md-end">
+          <div class="d-flex flex-column align-items-center align-items-md-end">
+            <img src="Imagens/WhatsApp Image 2025-08-18 at 19.00.17.jpeg" alt="Logo PUC Minas" class="rounded-3 mb-2" style="width:40px; height:40px;">
+            <span class="fw-semibold">PUC Minas</span>
+            <small class="text-muted">2024 - 2027</small>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
 </section>
 
 <section class="p-3" id="contato">
@@ -175,7 +280,7 @@
     <!-- Coluna Direita -->
     <div class="col-md-6">
       
-      <form>
+      <form id="formulario-contato">
         <div class="mb-3">
           <label for="name" class="form-label">Nome / Name</label>
           <input type="text" class="form-control p-2" id="name"  placeholder="Digite seu nome/Put your name">
@@ -194,10 +299,15 @@
   </div>
 </div>
 </section>
-  
-  
 
+   <div id="alertSuccess" class="alert alert-success d-none" role="alert">
+  Mensagem enviada com sucesso! 🎉
+</div>
 
+<div id="alertError" class="alert alert-danger d-none" role="alert">
+  Ops! Não foi possível enviar sua mensagem. 😢
+</div>
+  
 </body>
 
 <footer class="p-3" id="rodape">
@@ -213,7 +323,7 @@
   <p class="text-center" id="diretos">&copy; Caue Afonso Moraes. Todos os direitos reservados</p>
 </footer>
 
-
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script src="main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </html>
