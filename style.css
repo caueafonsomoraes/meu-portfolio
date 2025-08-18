@@ -1,8 +1,13 @@
 #foto-nome {
     
     background: linear-gradient(to bottom, #3b82f6, #4338ca);
-    /* 2563eb */
+    
 
+}
+
+#foto-pessoal{
+   border: 6px solid white;  
+  border-radius: 10px;
 }
 
 #nome-header{
